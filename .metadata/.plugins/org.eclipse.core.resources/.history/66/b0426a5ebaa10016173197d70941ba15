@@ -1,0 +1,5 @@
+package main;
+
+public class Static {
+	static String outShell="";
+}

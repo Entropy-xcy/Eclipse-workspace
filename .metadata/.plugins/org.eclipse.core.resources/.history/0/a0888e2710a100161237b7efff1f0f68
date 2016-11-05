@@ -1,0 +1,24 @@
+import java.awt.BorderLayout;
+import java.awt.Button;
+import java.awt.Frame;
+import java.awt.GridLayout;
+import java.awt.TextField;
+
+public class GUI {
+	static void genWin(){
+		Frame frame=new Frame("CLI");
+		frame.setSize(500, 700);
+		frame.setLayout(null);
+		
+		Button button=new Button("PUSH!");
+		button.setBounds(650,450,100,50);
+		frame.add(button,BorderLayout.CENTER);
+		
+		//TextField textfield=new TextField();
+		//frame.add(textfield);
+		
+		frame.setVisible(true);
+	}
+	
+	
+}

@@ -1,0 +1,12 @@
+package main;
+
+public class Main {
+	public static void main(String[] args){
+		GUI.genWin();
+		Board board=new Board();
+		board.fill();
+		board.set(12, 11, Space.type.White);
+		board.refresh();
+		board.show();
+	}
+}

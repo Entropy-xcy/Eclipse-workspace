@@ -1,0 +1,15 @@
+19:59:34 **** Build of configuration Debug for project HelloC ****
+make all 
+Building file: ../src/HelloC.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloC.d" -MT"src/HelloC.o" -o "src/HelloC.o" "../src/HelloC.cpp"
+Finished building: ../src/HelloC.cpp
+ 
+Building target: HelloC
+Invoking: MacOS X C++ Linker
+g++  -o "HelloC"  ./src/HelloC.o   
+Finished building target: HelloC
+ 
+19:59:37 **** Incremental Build of configuration Debug for project HelloC ****
+make all 
+make: Nothing to be done for `all'.

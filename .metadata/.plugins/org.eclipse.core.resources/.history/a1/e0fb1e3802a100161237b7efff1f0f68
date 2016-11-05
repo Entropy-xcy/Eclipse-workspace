@@ -1,0 +1,11 @@
+
+public class Space {
+	Vec2 position;
+	
+	
+	Space(int x,int y){
+		this.position=new Vec2(x,y);
+	}
+	
+	
+}

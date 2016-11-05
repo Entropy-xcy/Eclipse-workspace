@@ -1,0 +1,8 @@
+import java.awt.*;
+
+public class HelloWorld {
+	public static void main(String[] args){
+		Vec2 vec=new Vec2(10,10);
+		System.out.println(vec.x);
+	}
+}

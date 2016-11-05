@@ -1,0 +1,9 @@
+import java.awt.*;
+
+public class HelloWorld {
+	public static void main(String[] args){
+		Frame frame=new Frame("123");
+		frame.setSize(200, 100);
+		frame.setVisible(true);
+	}
+}

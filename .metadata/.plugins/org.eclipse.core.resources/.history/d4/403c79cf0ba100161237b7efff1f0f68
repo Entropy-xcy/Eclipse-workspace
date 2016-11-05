@@ -1,0 +1,8 @@
+public class HelloWorld {
+	public static void main(String[] args){
+		Board board=new Board();
+		board.fill();
+		board.set(2,2,Space.type.White);
+		board.show();
+	}
+}

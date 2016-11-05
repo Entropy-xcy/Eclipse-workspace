@@ -1,0 +1,6 @@
+19:59:37 **** Incremental Build of configuration Debug for project HelloC ****
+make all 
+make: Nothing to be done for `all'.
+
+19:59:37 Build Finished (took 72ms)
+

@@ -1,0 +1,30 @@
+import java.awt.Button;
+import java.awt.Frame;
+import java.awt.TextField;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class GUI {
+	static void genWin(){
+		Frame frame=new Frame("CLI");
+		frame.setSize(500, 700);
+		
+		Button button=new Button("PUSH!");
+		frame.add(button);
+		
+		TextField textfield=new TextField();
+		frame.add(textfield);
+		
+		frame.setVisible(true);
+	}
+	
+	private static void addWindowClosingEvent(Frame f){
+	         f.addWindowListener(new WindowAdapter() {
+		            @Override
+		             public void windowClosing(WindowEvent arg0) {
+		                 System.exit(0);
+		             }
+		             
+	         });
+	}
+}

@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class HelloWorld {
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		Board board=new Board();
+		board.fill();
+		board.set(2,2,Space.type.White);
+		board.refresh();
+		board.show();
+		String command=sc.nextLine();
+		System.out.println(command);
+	}
+}

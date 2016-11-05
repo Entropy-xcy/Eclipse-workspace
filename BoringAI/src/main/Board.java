@@ -1,0 +1,56 @@
+package main;
+
+
+public class Board {
+	Space[][] board=new Space[15][15];
+	char[][] printable=new char[15][15];
+	
+	void boardInit(){
+		for(int i=0;i<15;i++){
+			for(int j=0;j<15;j++){
+				board[i][j]=new Space(i,j,Space.type.Blank);
+			}
+		}
+	}
+	
+	Board(){
+		boardInit();
+	}
+	
+	void refresh(){
+		for(int i=0;i<15;i++){
+			for(int j=0;j<15;j++){
+				if (board[i][j].piece==Space.type.Black){
+					printable[i][j]='X';
+				}
+				if (board[i][j].piece==Space.type.White){
+					printable[i][j]='O';
+				}
+				if (board[i][j].piece==Space.type.Blank){
+					printable[i][j]='+';
+				}
+			}
+		}
+	}
+	
+	void show(){
+		GUI.shellPrint("     0  1  2  3  4  5  6  7  8  9  10 11 12 13 14 ");
+		GUI.shellPrintln("");
+		
+		for(int i=0;i<15;i++){
+			GUI.shellPrint(i+" ");
+			if(i<10){
+				GUI.shellPrint("  ");
+			}
+			for(int j=0;j<15;j++){
+				GUI.shellPrint(printable[i][j]+"  ");
+			}
+			GUI.shellPrintln("");
+		}
+	}
+	
+	void set(int x,int y,Space.type tp){
+		board[x][y].piece=tp;
+		refresh();
+	}
+}

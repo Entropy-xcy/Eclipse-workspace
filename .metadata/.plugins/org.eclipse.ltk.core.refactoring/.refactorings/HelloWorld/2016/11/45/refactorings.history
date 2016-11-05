@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 elements to &apos;BoringAI/src/main&apos;&#x0A;- Original project: &apos;HelloWorld&apos;&#x0A;- Destination element: &apos;BoringAI/src/main&apos;&#x0A;- Original elements:&#x0A;     Vec2.java&#x0A;     GUI.java&#x0A;     Space.java&#x0A;     Board.java&#x0A;     Static.java" description="Copy compilation units" destination="=BoringAI/src&lt;main" element1="/src&lt;{Vec2.java" element2="/src&lt;{GUI.java" element3="/src&lt;{Space.java" element4="/src&lt;{Board.java" element5="/src&lt;{Static.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1478171915355" units="5" version="1.0"/>
+</session>
